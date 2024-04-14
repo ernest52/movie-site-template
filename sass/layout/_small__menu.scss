@@ -1,0 +1,13 @@
+.small__menu {
+  display: none;
+  @include respond(noneHover) {
+    display: block;
+    grid-row: small__menu-start / small__menu-end;
+    grid-column: 1/-1;
+    padding: 2rem;
+    background-color: $color__gray--dark;
+  }
+  & .slide-menu__links :not(:first-child) {
+    color: white;
+  }
+}

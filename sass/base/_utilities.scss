@@ -1,0 +1,17 @@
+.--u-center-block {
+  margin: 0 auto;
+}
+.--u-right-block {
+  margin: 0;
+  margin-left: auto;
+}
+.--u-important {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.movie__link {
+  color: currentColor;
+  text-transform: none;
+  display: block;
+  // width: 100%;
+}

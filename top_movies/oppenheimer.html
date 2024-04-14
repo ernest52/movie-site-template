@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>movie-side</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav" id="nav">
+        <h1 class="logo">TOP MOVIES</h1>
+        <div class="nav__box">
+          <ul class="nav__box-big">
+            <li class="nav__item">
+              <a href="../index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Genres</a>
+              <ul class="nav__sub">
+                <li class="nav__sub-item">
+                  <a href="../genres/action.html" class="nav__sub-link"
+                    >Action</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="../genres/adventure.html" class="nav__sub-link"
+                    >Adventure</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="../genres/horror.html" class="nav__sub-link"
+                    >Horror</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="../genres/thriller.html" class="nav__sub-link"
+                    >Thriller</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="" class="nav__sub-link">Family</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Country</a>
+              <ul class="nav__sub">
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link"> United States</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">United Kingdom</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">Switzerland</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">Australia</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">Mexico</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">TV-series</a>
+            </li>
+          </ul>
+          <div class="nav__box-small">
+            <!-- <input type="checkbox" id="triger" class="triger-input" /> -->
+            <div class="triger" id="triger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__search-box">
+          <input
+            type="text"
+            class="nav__search"
+            placeholder="search movies or series"
+          />
+          <svg class="nav__svg">
+            <use xlink:href="../images/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </div>
+      </nav>
+      <div class="slide-menu close">
+        <div class="slide-menu__nav">
+          <div class="triger --u-right-block" id="triger">
+            <span class="triger-cross"></span>
+          </div>
+          <h1 class="logo --u-center-block">TOP MOVIES</h1>
+          <div class="slide-menu__links">
+            <a href="#" class="slide-menu__link slide-menu__link--activa">
+              HOME</a
+            >
+            <a href="#" class="slide-menu__link">GENRES</a>
+            <a href="#" class="slide-menu__link">COUNTRY</a>
+            <a href="#" class="slide-menu__link">MOVIES</a>
+            <a href="#" class="slide-menu__link">TV-SERIES</a>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__box">
+          <h2 class="header__heading">Barbie</h2>
+          <p class="header__text">
+            Barbie and Ken are having the time of their lives in the colorful
+            and seemingly perfect world of Barbie Land. However, when they get a
+            chance to go to the real world, they soon discover the joys and
+            perils of living among humans.
+          </p>
+          <button class="btn btn__shadow">Watch Now</button>
+        </div>
+      </header>
+      <div class="small__menu">
+        <div class="slide-menu__links">
+          <a
+            href="../index.html"
+            class="slide-menu__link slide-menu__link--activa"
+          >
+            HOME</a
+          >
+          <a href="#" class="slide-menu__link">GENRES</a>
+          <a href="#" class="slide-menu__link">COUNTRY</a>
+          <a href="#" class="slide-menu__link">MOVIES</a>
+          <a href="#" class="slide-menu__link">TV-SERIES</a>
+        </div>
+      </div>
+      <div class="side-nav">
+        <h2 class="logo side-nav__heading">TOP 3 Movies</h2>
+
+        <div class="movie-top">
+          <a href="blue__beetle.html">
+            <img
+              src="../images/blue__beetle--small.jpg"
+              srcset="
+                ../images/blue__beetle--big.jpg   900w,
+                ../images/blue__beetle--small.jpg 400w
+              "
+              sizes="(max-width:75em) 15vw, (max-width:56.25em) 14vw, (max-width:37.5em) 22vw, (max-width:25em) 33vw, 175w"
+              alt="top movie blue beetle"
+              class="movie-top__img"
+            />
+          </a>
+          <p class="movie-top__description">
+            <button class="btn">read more</button>
+            Recent college grad Jaime Reyes returns home full of aspirations for
+            his future, only to find that home is not quite as he left it.
+            <span class="movie-top__description--more">
+              As he searches to find his purpose in the world, fate intervenes
+              when Jaime unexpectedly finds himself in possession of an ancient
+              relic of alien biotechnology: the Scarab.
+            </span>
+          </p>
+        </div>
+
+        <div class="movie-top">
+          <a href="equalizer.html">
+            <img
+              src="../images/equalizer--small.jpg"
+              srcset="
+                ../images/equalizer--big.jpg   900w,
+                ../images/equalizer--small.jpg 400w
+              "
+              sizes="(max-width:75em) 15vw, (max-width:56.25em) 14vw, (max-width:37.5em) 22vw, (max-width:25em) 33vw, 175w"
+              alt="top movie Equalizer"
+              class="movie-top__img"
+            />
+          </a>
+          <p class="movie-top__description">
+            <button class="btn">read more</button>
+            Robert McCall finds himself at home in Southern Italy but he
+            discovers his friends are under the control of local crime bosses.
+            <span class="movie-top__description--more">
+              As events turn deadly, McCall knows what he has to do: become his
+              friends’ protector by taking on the mafia.
+            </span>
+          </p>
+        </div>
+
+        <div class="movie-top">
+          <a href="demeter.html">
+            <img
+              src="../images/demeter--small.jpg"
+              srcset="
+                ../images/demeter--big.jpg   900w,
+                ../images/demeter--small.jpg 400w
+              "
+              sizes="(max-width:75em) 15vw, (max-width:56.25em) 14vw, (max-width:37.5em) 22vw, (max-width:25em) 33vw, 175w"
+              alt="top movie Demeter"
+              class="movie-top__img"
+            />
+          </a>
+          <p class="movie-top__description">
+            The crew of the merchant ship Demeter attempts to survive the ocean
+            voyage from Carpathia to London as they are stalked each night by a
+            merciless presence onboard the ship.
+          </p>
+        </div>
+      </div>
+      <div class="main main__top-movies">
+        <div class="player">
+          <img
+            src="../images/oppenheimer--small.jpg"
+            srcset="
+              ../images/oppenheimer--big.jpg   900w,
+              ../images/oppenheimer--small.jpg 500w
+            "
+            sizes="(max-width:75rem) 75vw,(max-width:56.25rem) 94vw,(max-width:37.5rem) 92vw, (max-width:25rem) 92vw, 80vw  "
+            alt="oppenheimer player"
+            class="player__image"
+          />
+          <svg class="player__icon">
+            <use xlink:href="../images/sprite.svg#icon-controller-play"></use>
+          </svg>
+        </div>
+        <div class="poster">
+          <img
+            src="../images/oppenheimer--small.jpg"
+            alt="oppenheimer image"
+            class="poster__image"
+          />
+          <div class="poster__trailer">Trailer</div>
+        </div>
+        <div class="description">
+          <h2 class="description__title">Oppenheimer</h2>
+          <p class="description__text">
+            The story of J. Robert Oppenheimer’s role in the development of the
+            atomic bomb during World War II.
+          </p>
+          <div class="details-box">
+            <div class="details-box__movie">
+              <p>
+                <span class="--u-important">Genre:</span> Biography, Drama,
+                History
+              </p>
+              <p>
+                <span class="--u-important">Actor:</span>Cillian Murphy, Emily
+                Blunt, Robert Downey Jr
+              </p>
+              <p>
+                <span class="--u-important">Director:</span> Christopher Nolan
+              </p>
+              <p>
+                <span class="--u-important">Country:</span> United States,
+                United Kingdom
+              </p>
+            </div>
+            <div class="details-box__quality">
+              <p><span class="--u-important">Quality:</span> HD</p>
+              <p><span class="--u-important">Duration:</span> 3h 00m</p>
+              <p><span class="--u-important">Release:</span> 2023</p>
+              <p><span class="--u-important">IMDb:</span> 9/10</p>
+            </div>
+          </div>
+        </div>
+        <div class="download">
+          <div>stream in HD</div>
+          <div>download in HD</div>
+        </div>
+        <div class="recommended">
+          <div class="recommended__label">You may also like</div>
+          <div class="movie-box">
+            <a href="./demeter.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src=" ../images/demeter--small.jpg"
+                srcset="
+                  ../images/demeter--small.jpg 500w,
+                  ../images/demeter--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Demeter</div>
+              <div class="movie-rec__quality">CAM</div>
+            </a>
+
+            <a href="./equalizer.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src="../images/equalizer--small.jpg"
+                srcset="
+                  ../images/equalizer--small.jpg 500w,
+                  ../images/equalizer--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Equalizer</div>
+              <div class="movie-rec__quality">HD</div>
+            </a>
+            <a href="./meg_2.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src=" ../images/meg_2--small.jpg"
+                srcset="
+                  ../images/meg_2--small.jpg 500w,
+                  ../images/meg_2--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Meg 2</div>
+              <div class="movie-rec__quality">CAM</div>
+            </a>
+            <a href="./mission__impossible.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src="../images/mision__impossible--small.jpg"
+                srcset="
+                  ../images/mision__impossible--small.jpg 500w,
+                  ../images/mision__impossible--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Mission Impossible</div>
+              <div class="movie-rec__quality">CAM</div>
+            </a>
+            <a href="./insidious.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src=" ../images/Insidious--small.jpg"
+                srcset="
+                  ../images/Insidious--small.jpg 500w,
+                  ../images/Insidious--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Insidious</div>
+              <div class="movie-rec__quality">HD</div>
+            </a>
+            <a href="./oppenheimer.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src="../images/oppenheimer--small.jpg"
+                srcset="
+                  ../images/oppenheimer--small.jpg 500w,
+                  ../images/oppenheimer--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Oppenheimer</div>
+              <div class="movie-rec__quality">HD</div>
+            </a>
+            <a href="./heart_of_stone.html" class="movie__link movie-rec">
+              <svg class="player__icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-controller-play"
+                ></use>
+              </svg>
+              <img
+                src="../images/heart_stone--small.jpg"
+                srcset="
+                  ../images/heart_stone--small.jpg 500w,
+                  ../images/heart_stone--big.jpg   900w
+                "
+                sizes="(max-width:75rem) 20vw, (max-width:56.25rem) 26vw,(max-width:37.5rem) 24vw,(max-width:25.5rem) 21vw, 23vw "
+                class="movie-rec__image"
+                alt="demeter poster"
+              />
+              <div class="movie-rec__title">Heart of Stone</div>
+              <div class="movie-rec__quality">CAM</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__details-box">
+          <div class="footer__detail">
+            <span class="footer__detail--active">Movies</span>
+            <span class="footer__detail--span">TV-Series</span>
+            <span class="footer__detail--span"> FAQ's</span>
+            <span class="footer__detail--span"></span
+            ><span class="footer__detail--span"> FAQ's</span>
+          </div>
+          <div class="footer__detail">
+            <span class="footer__detail--active">Genres</span>
+            <span class="footer__detail--span">Action</span>
+            <span class="footer__detail--span">Drama</span>
+            <span class="footer__detail--span">History</span>
+            <span class="footer__detail--span">Crime</span>
+            <span class="footer__detail--span">Sport</span>
+          </div>
+          <div class="footer__detail">
+            <span class="footer__detail--active">Country </span>
+            <span class="footer__detail--span">South Korea</span>
+            <span class="footer__detail--span">United States </span>
+            <span class="footer__detail--span"> Canada </span>
+            <span class="footer__detail--span"> Mexico </span>
+            <span class="footer__detail--span"> Ireland</span>
+          </div>
+        </div>
+        <h3 class="logo">Top movies</h3>
+      </footer>
+    </div>
+  </body>
+  <script>
+    let trigers = document.querySelectorAll("#triger");
+    for (let i = 0; i < trigers.length; i++) {
+      trigers[i].addEventListener("click", function () {
+        document.querySelector(".slide-menu").classList.toggle("close");
+        document.querySelector(".wrapper").classList.toggle("smaller");
+      });
+    }
+  </script>
+</html>

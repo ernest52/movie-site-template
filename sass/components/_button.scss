@@ -1,0 +1,23 @@
+.btn {
+  & {
+    padding: 1rem;
+    background-color: $color--primary;
+    color: $color__white;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+  }
+  &__shadow {
+    box-shadow: 0 5px 1rem black;
+    &:active {
+      box-shadow: 0 2px 0.5rem black;
+
+      transform: translateY(3px);
+    }
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color_font--primary;
+  }
+}

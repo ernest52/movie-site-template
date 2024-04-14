@@ -1,0 +1,9 @@
+%link__base {
+  &:link,
+  &:visited {
+    color: currentColor;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+  }
+}

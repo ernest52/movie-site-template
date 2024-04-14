@@ -1,0 +1,81 @@
+.side-nav {
+  grid-column: 1/2;
+  grid-row: content-start/content-end;
+  @include respond(medium) {
+    grid-column: 1/-1;
+    grid-row: top-start/top-end;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @include respond(small) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  padding: 2rem 0;
+  background-color: $background__color--primary;
+  color: $color__gray--dark;
+  &__heading {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: calc(#{$font__size--main} +1rem);
+    @include respond(medium) {
+      flex: 0 0 100%;
+    }
+    @include respond(small) {
+      flex: 0 0 auto;
+      align-self: center;
+    }
+  }
+}
+.movie-top {
+  display: flex;
+  margin: 4rem 0;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-align: center;
+  }
+
+  &__img {
+    // height: 20rem;
+    width: 70%;
+    @include respond(medium) {
+      height: 20rem;
+      width: auto;
+    }
+  }
+  &__description {
+    margin: 1rem 0;
+    position: relative;
+    @include respond(medium) {
+      display: none;
+    }
+    @include respond(small) {
+      display: inline;
+    }
+
+    &--more {
+      display: none;
+    }
+    button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(130%);
+      @include respond(medium) {
+        display: none;
+      }
+      @include respond(small) {
+        display: block;
+      }
+    }
+    button:focus ~ &--more {
+      display: inline;
+    }
+  }
+}

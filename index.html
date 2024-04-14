@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>movie-side</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav" id="nav">
+        <h1 class="logo">TOP MOVIES</h1>
+        <div class="nav__box">
+          <ul class="nav__box-big">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Genres</a>
+              <ul class="nav__sub">
+                <li class="nav__sub-item">
+                  <a href="./genres/action.html" class="nav__sub-link"
+                    >Action</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="./genres/adventure.html" class="nav__sub-link"
+                    >Adventure</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="./genres/horror.html" class="nav__sub-link"
+                    >Horror</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="./genres/thriller.html" class="nav__sub-link"
+                    >Thriller</a
+                  >
+                </li>
+                <li class="nav__sub-item">
+                  <a href="" class="nav__sub-link">Family</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Country</a>
+              <ul class="nav__sub">
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link"> United States</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">United Kingdom</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">Switzerland</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">Australia</a>
+                </li>
+                <li class="nav__sub-item">
+                  <a href="#" class="nav__sub-link">Mexico</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">TV-series</a>
+            </li>
+          </ul>
+          <div class="nav__box-small">
+            <div class="triger" id="triger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__search-box">
+          <input
+            type="text"
+            class="nav__search"
+            placeholder="search movies or series"
+          />
+          <svg class="nav__svg">
+            <use xlink:href="./images/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </div>
+      </nav>
+      <div class="slide-menu close">
+        <div class="slide-menu__nav">
+          <div class="triger --u-right-block" id="triger">
+            <span class="triger-cross"></span>
+          </div>
+          <h1 class="logo --u-center-block">TOP MOVIES</h1>
+          <div class="slide-menu__links">
+            <a href="#" class="slide-menu__link slide-menu__link--activa">
+              HOME</a
+            >
+            <a href="#" class="slide-menu__link">GENRES</a>
+            <a href="#" class="slide-menu__link">COUNTRY</a>
+            <a href="#" class="slide-menu__link">MOVIES</a>
+            <a href="#" class="slide-menu__link">TV-SERIES</a>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__box">
+          <h2 class="header__heading">Barbie</h2>
+          <p class="header__text">
+            Barbie and Ken are having the time of their lives in the colorful
+            and seemingly perfect world of Barbie Land. However, when they get a
+            chance to go to the real world, they soon discover the joys and
+            perils of living among humans.
+          </p>
+          <button class="btn btn__shadow">Watch Now</button>
+        </div>
+      </header>
+      <div class="small__menu">
+        <div class="slide-menu__links">
+          <a href="#" class="slide-menu__link slide-menu__link--activa">
+            HOME</a
+          >
+          <a href="#" class="slide-menu__link">GENRES</a>
+          <a href="#" class="slide-menu__link">COUNTRY</a>
+          <a href="#" class="slide-menu__link">MOVIES</a>
+          <a href="#" class="slide-menu__link">TV-SERIES</a>
+        </div>
+      </div>
+      <div class="side-nav">
+        <h2 class="logo side-nav__heading">TOP 3 Movies</h2>
+
+        <div class="movie-top">
+          <a href="./top_movies/blue__beetle.html">
+            <img
+              src=" ./images/blue__beetle--small.jpg"
+              srcset="
+                ./images/blue__beetle--big.jpg   900w,
+                ./images/blue__beetle--small.jpg 400w
+              "
+              sizes="(max-width:75em) 15vw, (max-width:56.25em) 14vw, (max-width:37.5em) 22vw, (max-width:25em) 33vw, 175px"
+              alt="top movie blue beetle"
+              class="movie-top__img"
+            />
+          </a>
+          <p class="movie-top__description">
+            <button class="btn">read more</button>
+            Recent college grad Jaime Reyes returns home full of aspirations for
+            his future, only to find that home is not quite as he left it.
+            <span class="movie-top__description--more">
+              As he searches to find his purpose in the world, fate intervenes
+              when Jaime unexpectedly finds himself in possession of an ancient
+              relic of alien biotechnology: the Scarab.
+            </span>
+          </p>
+        </div>
+
+        <div class="movie-top">
+          <a href="./top_movies/equalizer.html">
+            <img
+              src="./images/equalizer--small.jpg"
+              srcset="
+                ./images/equalizer--big.jpg   900w,
+                ./images/equalizer--small.jpg 400w
+              "
+              sizes="(max-width:75em) 15vw, (max-width:56.25em) 14vw, (max-width:37.5em) 22vw, (max-width:25em) 33vw, 175px"
+              alt="top movie Equalizer"
+              class="movie-top__img"
+            />
+          </a>
+          <p class="movie-top__description">
+            <button class="btn">read more</button>
+            Robert McCall finds himself at home in Southern Italy but he
+            discovers his friends are under the control of local crime bosses.
+            <span class="movie-top__description--more">
+              As events turn deadly, McCall knows what he has to do: become his
+              friends’ protector by taking on the mafia.
+            </span>
+          </p>
+        </div>
+
+        <div class="movie-top">
+          <a href="./top_movies/demeter.html">
+            <img
+              src="./images/demeter--small.jpg"
+              srcset="
+                ./images/demeter--big.jpg   900w,
+                ./images/demeter--small.jpg 400w
+              "
+              sizes="(max-width:75em) 15vw, (max-width:56.25em) 14vw, (max-width:37.5em) 22vw, (max-width:25em) 33vw, 175px"
+              alt="top movie Demeter"
+              class="movie-top__img"
+            />
+          </a>
+          <p class="movie-top__description">
+            The crew of the merchant ship Demeter attempts to survive the ocean
+            voyage from Carpathia to London as they are stalked each night by a
+            merciless presence onboard the ship.
+          </p>
+        </div>
+      </div>
+      <div class="main main__home">
+        <h2 class="logo main__heading">the newest on the page</h2>
+        <div class="movie">
+          <a href="./top_movies/blue__beetle.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">CAM</div>
+                  <img
+                    src="./images/blue__beetle--small.jpg"
+                    srcset="
+                      ./images/blue__beetle--small.jpg 400w,
+                      ./images/blue__beetle--big.jpg   900w
+                    "
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    alt="blue beetle poster"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">blue beetle</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">blue beetle</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p>
+                    <span class="movie__details--d">Duration:</span> 120 min
+                  </p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/demeter.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">CAM</div>
+                  <img
+                    src="./images/demeter--small.jpg"
+                    srcset="
+                      ./images/demeter--small.jpg 400w,
+                      ./images/demeter--big.jpg   900w
+                    "
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    alt="Demeter poster"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">Demeter</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">Demeter</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p><span class="movie__details--d">Duration:</span> 90 min</p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/equalizer.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">HD</div>
+                  <img
+                    src="./images/equalizer--small.jpg"
+                    srcset="
+                      ./images/equalizer--small.jpg 400w,
+                      ./images/equalizer--big.jpg   900w
+                    "
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    alt="Equalizer poster"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">Equalizer</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">Equalizer</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p><span class="movie__details--d">Duration:</span> 68 min</p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p><span class="movie__details--d">country: </span>USA</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/gran__turismo.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">CAM</div>
+
+                  <img
+                    src="./images/gran_turismo--small.jpg"
+                    srcset="
+                      ./images/gran_turismo--small.jpg 400w,
+                      ./images/gran_turismo--big.jpg   900w
+                    "
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    alt="blue beetle poster"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">gran Turismo</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">gran Turismo</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p>
+                    <span class="movie__details--d">Duration:</span> 120 min
+                  </p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/heart_of_stone.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">CAM</div>
+                  <img
+                    src="./images/heart_stone--small.jpg"
+                    srcset="
+                      ./images/heart_stone--small.jpg 400w,
+                      ./images/heart_stone--big.jpg   900w
+                    "
+                    alt="poster of heart of stone"
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">Heart of Stone</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">Heart of Stone</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p><span class="movie__details--d">Duration:</span> 90 min</p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/indiana_jones.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">HD</div>
+
+                  <img
+                    src=" ./images/indiana___jones--small.jpg"
+                    srcset="
+                      ./images/indiana___jones--small.jpg 400w,
+                      ./images/indiana___jones--big.jpg   900w
+                    "
+                    alt="poster of Indiana Jones"
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">Indiana Jones</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">Indiana Jones</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p>
+                    <span class="movie__details--d">Duration:</span> 120 min
+                  </p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/insidious.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">HD</div>
+
+                  <img
+                    src="./images/insidious--small.jpg"
+                    srcset="
+                      ./images/insidious--small.jpg 400w,
+                      ./images/insidious--big.jpg   900w
+                    "
+                    alt="poster of insidious"
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">Insidious</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">Insidious</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p>
+                    <span class="movie__details--d">Duration:</span> 120 min
+                  </p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./top_movies/meg_2.html" class="movie__link">
+            <div class="movie-card">
+              <div class="movie-card__front">
+                <div class="movie-cover">
+                  <div class="movie-cover__version">CAM</div>
+
+                  <img
+                    src="./images/meg_2--small.jpg"
+                    srcset="
+                      ./images/meg_2--small.jpg 400w,
+                      ./images/meg_2--big.jpg   900w
+                    "
+                    alt="poster of meg 2"
+                    sizes="(max-width:75em) 20vw, (max-width:56.25em) 18vw, (max-width:37.5em) 35vw, (max-width:25em) 65vw, 180px"
+                    class="movie-cover__img"
+                  />
+                  <div class="movie-cover__name">Meg 2</div>
+                </div>
+              </div>
+              <div class="movie-card__back">
+                <p class="movie__title">Meg 2</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+                  odit sunt quasi consequatur consequuntur mollitia ipsam
+                  tempore unde cum reprehenderit.
+                </p>
+                <div class="movie__details">
+                  <p>
+                    <span class="movie__details--d">Duration:</span> 120 min
+                  </p>
+                  <p>
+                    <span class="movie__details--d">Languages:</span> English,
+                    German
+                  </p>
+                  <p>
+                    <span class="movie__details--d">country: </span
+                    >Nietherlands, Belgium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__details-box">
+          <div class="footer__detail">
+            <span class="footer__detail--active">Movies</span>
+            <span class="footer__detail--span">TV-Series</span>
+            <span class="footer__detail--span"> FAQ's</span>
+            <span class="footer__detail--span"></span
+            ><span class="footer__detail--span"> FAQ's</span>
+          </div>
+          <div class="footer__detail">
+            <span class="footer__detail--active">Genres</span>
+            <span class="footer__detail--span">Action</span>
+            <span class="footer__detail--span">Drama</span>
+            <span class="footer__detail--span">History</span>
+            <span class="footer__detail--span">Crime</span>
+            <span class="footer__detail--span">Sport</span>
+          </div>
+          <div class="footer__detail">
+            <span class="footer__detail--active">Country </span>
+            <span class="footer__detail--span">South Korea</span>
+            <span class="footer__detail--span">United States </span>
+            <span class="footer__detail--span"> Canada </span>
+            <span class="footer__detail--span"> Mexico </span>
+            <span class="footer__detail--span"> Ireland</span>
+          </div>
+        </div>
+        <h3 class="logo">Top movies</h3>
+      </footer>
+    </div>
+    <script>
+      let trigers = document.querySelectorAll("#triger");
+      for (let i = 0; i < trigers.length; i++) {
+        trigers[i].addEventListener("click", function () {
+          document.querySelector(".slide-menu").classList.toggle("close");
+          document.querySelector(".wrapper").classList.toggle("smaller");
+        });
+      }
+    </script>
+  </body>
+</html>

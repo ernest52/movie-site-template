@@ -1,0 +1,142 @@
+.player {
+  position: relative;
+  grid-area: player;
+  cursor: pointer;
+  @include respond(large) {
+    padding-top: 2rem;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    @include respond(x-small) {
+      height: 50vh;
+      max-width: 100%;
+    }
+  }
+  &__icon {
+    width: 10vw;
+    height: 10vw;
+    fill: $color-white;
+    background-color: $color--primary;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 1vw;
+    z-index: 1;
+    cursor: pointer;
+    @include respond(medium) {
+      width: 20vw;
+      height: 20vw;
+    }
+  }
+  &:hover::before {
+    display: block;
+    backdrop-filter: brightness(0.5);
+  }
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.poster {
+  grid-area: poster;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &__image {
+    height: 70%;
+  }
+  &__trailer {
+    background-color: $color--primary;
+    font-size: calc(#{$font__size--main} + 0.5rem);
+    padding: 1rem;
+    align-self: stretch;
+    text-align: center;
+  }
+  @include respond(x-small) {
+    display: none;
+  }
+}
+.description {
+  grid-area: description;
+  color: initial;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include respond(large) {
+    justify-content: flex-start;
+  }
+  & > * {
+    @include respond(large) {
+      margin: 1rem;
+    }
+  }
+  // background-color: skyblue;
+  .details-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+    @include respond(medium) {
+      flex-direction: column;
+    }
+    & > * > * {
+      margin: 1rem 0;
+      font-weight: light;
+    }
+  }
+}
+.download {
+  grid-area: download;
+  text-align: center;
+  text-transform: capitalize;
+  @include respond(large) {
+    display: none;
+  }
+
+  div {
+    padding: 1rem;
+    background-color: $color--primary;
+    margin: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: lighten($color--primary, 10%);
+    }
+  }
+}
+
+.recommended {
+  grid-area: recommended;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem;
+  &__label {
+    padding: 1rem;
+    display: inline-block;
+    background-color: $color--primary;
+
+    text-transform: capitalize;
+  }
+  .movie-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    @include respond(medium) {
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.main {
+  grid-column: 2/3;
+  grid-row: content-start/content-end;
+  background-color: $color_font--primary;
+  @include respond(medium) {
+    grid-column: 1/-1;
+  }
+}

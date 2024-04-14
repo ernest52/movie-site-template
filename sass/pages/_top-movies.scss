@@ -1,0 +1,28 @@
+.main {
+  &__top-movies {
+    display: grid;
+    grid-template-columns: minmax(min-content, 20rem) 1fr minmax(
+        min-content,
+        20rem
+      );
+    grid-template-rows: 100vh 50vh min-content;
+    grid-template-areas:
+      "player player player"
+      "poster description download"
+      "recommended recommended recommended";
+    @include respond(large) {
+      grid-template-areas:
+        "player player player"
+        "poster description description"
+        "recommended recommended recommended";
+    }
+    @include respond(x-small) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      grid-template-areas:
+        "player"
+        "description"
+        "recommended";
+    }
+  }
+}

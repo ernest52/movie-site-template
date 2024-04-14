@@ -1,0 +1,23 @@
+.main {
+  &__home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 6rem;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(#{$font__size--main} + 1.5rem);
+    @include respond(medium) {
+      display: block;
+      font-size: calc(#{$font__size--main} + 0.5rem);
+      margin: 3rem auto;
+    }
+    &:hover {
+      transform: none;
+    }
+  }
+}

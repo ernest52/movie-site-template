@@ -1,0 +1,76 @@
+.triger-input {
+  display: none;
+  &:checked + .triger span {
+    background-color: transparent;
+  }
+  &:checked + .triger span::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  &:checked + .triger span::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+.triger {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  @include respond(x-small) {
+    // width: 70vw;
+    display: none;
+  }
+  position: relative;
+  cursor: pointer;
+
+  span {
+    width: 3rem;
+    height: 3px;
+    // @include respond(x-small) {
+    //   width: 70vw;
+    //   height: 5px;
+    // }
+    background-color: tomato;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::after,
+    &:before {
+      background-color: purple;
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      content: "";
+      width: 3rem;
+      height: 3px;
+      // @include respond(x-small) {
+      //   width: 70vw;
+      //   height: 5px;
+      // }
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -1rem;
+    }
+  }
+  &:hover span::after {
+    transform: translateY(0.2rem);
+  }
+  &:hover span::before {
+    transform: translateY(-0.2rem);
+  }
+  & span.triger-cross {
+    background-color: transparent;
+    &::after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    &::before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+}

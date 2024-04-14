@@ -1,0 +1,42 @@
+.footer {
+  grid-column: 1/-1;
+  grid-row: footer-start/footer-end;
+  padding: 2rem;
+
+  background-color: $header__bg;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include respond(medium) {
+    flex-direction: column;
+  }
+
+  &__details-box {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    @include respond(medium) {
+      order: 1;
+      padding: 2rem 1rem;
+      width: 100%;
+    }
+    @include respond(small) {
+      flex-direction: column;
+      order: 1;
+      width: 100%;
+    }
+  }
+  &__detail {
+    margin-left: 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    &--active {
+      color: $footer__color;
+    }
+    &--span:hover {
+      cursor: pointer;
+      background-color: $footer__color;
+    }
+  }
+}
